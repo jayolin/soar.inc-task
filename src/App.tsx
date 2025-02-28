@@ -7,14 +7,14 @@ import MainLayout from './components/layout/MainLayout';
 const App = () => {
   return (
     <AppProvider>
-      <MainLayout>
-        <Router>
+      <Router>
+        <MainLayout>
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/settings" element={<Settings />} />
           </Routes>
-        </Router>
-      </MainLayout>
+        </MainLayout>
+      </Router>
     </AppProvider>
   );
 };
