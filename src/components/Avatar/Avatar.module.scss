@@ -1,6 +1,6 @@
 .root {
   .container {
-    @apply rounded-full bg-gray-300 bg-cover bg-no-repeat bg-center;
+    @apply rounded-full bg-gray-300 bg-cover bg-no-repeat bg-center flex items-center justify-center;
 
     &.md {
       @apply w-8 h-8 lg:w-10 lg:h-10;

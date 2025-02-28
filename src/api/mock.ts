@@ -39,18 +39,21 @@ const fetchRecentTransactions = (): Array<Transaction> => {
   return [
     {
       type: "debit",
+      medium: "card",
       date: "21 January 2021",
       narration: "Deposit from my Card",
       amount: "$850",
     },
     {
       type: "credit",
+      medium: "paypal",
       date: "25 January 2021",
       narration: "Deposit PayPal",
       amount: "$2,500",
     },
     {
       type: "credit",
+      medium: "regular",
       date: "20 January 2021",
       narration: "Jemi Wilson",
       amount: "$5,400",

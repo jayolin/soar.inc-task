@@ -6,19 +6,30 @@ interface Props {
   size?: "md" | "lg" | "xl" | "xxl" | "custom";
   className?: string;
   children?: ReactNode;
+  innerChild?: ReactNode;
+  color?: string;
 }
 
-const Avatar = ({ src, size = "md", className = "", children }: Props) => {
+const Avatar = ({
+  src,
+  size = "md",
+  className = "",
+  children,
+  innerChild,
+  color,
+}: Props) => {
   return (
     <div aria-label="Avatar" className={`${classes.root} ${className}`}>
       <div
-        style={{backgroundImage: src ? `url(${src})` : undefined}}
+        style={{
+          backgroundImage: src ? `url(${src})` : undefined,
+          backgroundColor: color,
+        }}
         className={`${classes.container} ${classes[size]}`}
-      ></div>
+      >{innerChild}</div>
       {children}
     </div>
   );
 };
 
 export default Avatar;
-

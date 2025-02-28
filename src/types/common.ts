@@ -23,8 +23,10 @@ export interface User {
   cards: Array<CardDetails>
 }
 
+export type TransactionMedium = "regular" | "paypal" | "card";
 export interface Transaction {
   type: "debit" | "credit";
+  medium: TransactionMedium;
   date: string;
   narration: string;
   amount: string;
