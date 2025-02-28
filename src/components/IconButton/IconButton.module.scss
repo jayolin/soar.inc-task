@@ -1,0 +1,31 @@
+.root {
+  @apply flex items-center justify-center rounded-full;
+  @apply active:shadow-inner active:opacity-80;
+
+  &.md {
+    @apply w-[50px] h-[50px];
+  }
+
+  &.sm {
+    @apply w-8 h-8;
+  }
+
+  &.elevated {
+    box-shadow: 4px 4px 18px -2px #E7E4E8CC;
+  }
+
+  &.white {
+    @apply bg-white;
+    @apply hover:bg-[#F5F7FA];
+  }
+
+  &.gray {
+    @apply bg-[#F5F7FA];
+    @apply hover:bg-[#F5F7FA]/80;
+  }
+
+  &.black {
+    @apply bg-black text-white;
+    @apply hover:bg-black/80;
+  }
+}
