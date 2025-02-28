@@ -1,9 +1,15 @@
-import { Pie } from 'react-chartjs-2';
-import { Chart as ChartJS, ArcElement, Tooltip, Legend, ChartOptions } from 'chart.js';
-import SectionTitle from './SectionTitle';
-import { useRef } from 'react';
-import useChartResize from '../../hooks/useChartResize';
-import { ChartData } from '../../types/common';
+import { Pie } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+  ChartOptions,
+} from "chart.js";
+import SectionTitle from "./SectionTitle";
+import { useRef } from "react";
+import useChartResize from "../../hooks/useChartResize";
+import { ChartData } from "../../types/common";
 
 interface Props {
   className?: string;
@@ -34,7 +40,7 @@ const ExpenseStatistics = ({ className = "", stats }: Props) => {
     datasets: [
       {
         data: stats.data,
-        backgroundColor: ['#396AFF', '#343C6A', '#FC7900', '#232323'],
+        backgroundColor: ["#396AFF", "#343C6A", "#FC7900", "#232323"],
         offset: [0, 50, 50, 35],
       },
     ],
@@ -44,7 +50,14 @@ const ExpenseStatistics = ({ className = "", stats }: Props) => {
     <div className={`${className} flex flex-col`}>
       <SectionTitle title="Expense Statistics" />
       <div className="bg-white rounded-[25px] flex-1 flex items-center justify-center">
-        <Pie key={key} ref={chartRef} width={"100%"} data={data} options={options} />
+        <Pie
+          aria-label="Pie chart showing Expense Statistics"
+          key={key}
+          ref={chartRef}
+          width={"100%"}
+          data={data}
+          options={options}
+        />
       </div>
     </div>
   );

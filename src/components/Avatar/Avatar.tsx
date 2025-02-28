@@ -10,7 +10,7 @@ interface Props {
 
 const Avatar = ({ src, size = "md", className = "", children }: Props) => {
   return (
-    <div className={`${classes.root} ${className}`}>
+    <div aria-label="Avatar" className={`${classes.root} ${className}`}>
       <div
         style={{backgroundImage: src ? `url(${src})` : undefined}}
         className={`${classes.container} ${classes[size]}`}

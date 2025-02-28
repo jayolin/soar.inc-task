@@ -11,6 +11,7 @@ const Button = ({ text, onClick, className = "" }: Props) => {
     <button
       onClick={() => onClick?.()}
       className={`${classes.root} ${className}`}
+      aria-label={text}
     >
       <span className="flex-1">{text}</span>
     </button>

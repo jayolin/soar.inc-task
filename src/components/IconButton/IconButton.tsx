@@ -20,6 +20,7 @@ const IconButton = ({
 }: Props) => {
   return (
     <button
+      aria-label="Icon Button"
       className={`${classes.root} ${classes[theme]} ${
         elevated ? classes.elevated : ""
       } ${classes[size]} ${className}`}

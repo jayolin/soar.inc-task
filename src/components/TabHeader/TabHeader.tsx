@@ -25,7 +25,10 @@ const TabHeader = ({
             tab.id === activeTab ? classes.active : ""
           }`}
         >
-          <button onClick={() => onRequestChangeTab?.(tab.id)}>
+          <button
+            aria-label={`Click to choose ${tab.name} tab`}
+            onClick={() => onRequestChangeTab?.(tab.id)}
+          >
             {tab.name}
           </button>
         </li>
