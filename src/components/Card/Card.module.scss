@@ -1,0 +1,43 @@
+.root {
+  @apply w-full h-full;
+  border-radius: 25px;
+  @apply flex flex-col overflow-hidden;
+
+  .cardLabel {
+    @apply text-xs lg:text-base;
+  }
+
+  .content {
+    @apply flex-1 px-4 py-4 space-y-3 lg:px-6 lg:py-6 lg:space-y-4;
+  }
+
+  .bottom {
+    @apply px-6 flex items-center justify-between lg:h-[70px] py-2;
+  }
+
+  &.dark {
+    @apply text-white;
+    background: linear-gradient(107.38deg, #5B5A6F 2.61%, #000000 101.2%);
+
+    .bottom {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    }
+
+    .cardLabel {
+      @apply text-[#FFFFFFB2] font-light;
+    }
+  }
+
+  &.light {
+    background: #FFFFFF;
+    border: 1px solid #DFEAF2;
+
+    .bottom {
+      border-top: 1px solid #DFEAF2
+    }
+
+    .cardLabel {
+      @apply text-[#718EBF] font-light;
+    }
+  }
+}
