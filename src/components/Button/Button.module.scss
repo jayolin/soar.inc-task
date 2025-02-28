@@ -1,5 +1,5 @@
 .root {
-  @apply flex py-3 px-10 bg-[#232323] text-white rounded-[15px] text-center;
+  @apply flex py-3 px-10 bg-[#232323] text-white rounded-[15px] text-center items-center space-x-2;
   @apply active:bg-black active:shadow-inner;
   @apply hover:ring-4;
 }
