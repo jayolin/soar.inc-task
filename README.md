@@ -1,46 +1,70 @@
-# Getting Started with Create React App
+# Soar.Inc Frontend Task
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## 🚀 Project Overview
+This is the frontend implementation for Soar.Inc's task, built with React and TypeScript. The project is designed to be fully responsive and efficiently handles mock data for rendering UI components.
 
-## Available Scripts
+## 📌 Live Demo
+Check out the live version here: [Soar.Inc Task](https://soar-inc-task.vercel.app/)
 
-In the project directory, you can run:
+## 📦 Cloning the Repository
+To clone and set up the project locally, run:
 
-### `npm start`
+```sh
+git clone https://github.com/jayolin/soar.inc-task.git
+cd soar.inc-task
+yarn install
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 🚀 Running the Project
+After installing dependencies, use the following scripts:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- **Start Development Server**
+  ```sh
+  yarn start
+  ```
+- **Build for Production**
+  ```sh
+  yarn build
+  ```
 
-### `npm test`
+## 🗂 Folder Structure
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The project follows a structured approach for scalability and maintainability:
 
-### `npm run build`
+```
+soar.inc-task/
+│── src/
+│   ├── api/        # Contains mock data for rendering UI results
+│   ├── assets/     # Static assets (images, icons, etc.)
+│   ├── components/ # Reusable UI components
+│   ├── context/    # Global state management
+│   ├── hooks/      # Custom React hooks
+│   ├── pages/      # Application pages
+│   ├── types/      # Type definitions for TypeScript
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📡 Deployment
+The project is configured for **automatic deployment** on Vercel. Simply commit and push changes to deploy:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```sh
+git add .
+git commit -m "Your commit message"
+git push origin main
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 💡 Assumptions Made
+- The API endpoints were mocked under `src/api` since no real backend was provided.
+- The project follows a **component-based architecture** for reusability.
+- **Vercel is used for hosting** and automatically deploys on push.
+- **Flexbox and Tailwind CSS** are used for layout and styling.
 
-### `npm run eject`
+## 🤝 Contribution
+If you'd like to contribute, feel free to fork the repo, create a new branch, and submit a PR.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 📝 License
+This project is for Soar.Inc's frontend task and is not licensed for public use.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Enjoy coding! 🚀
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
