@@ -11,6 +11,8 @@ interface InputProps {
   rounded?: boolean;
   className?: string;
   left?: ReactNode;
+  pattern?: string;
+  required?: boolean;
 }
 
 const Input: React.FC<InputProps> = ({
@@ -22,7 +24,9 @@ const Input: React.FC<InputProps> = ({
   variant = "white",
   rounded = false,
   className = "",
-  left
+  left,
+  pattern,
+  required
 }) => {
   return (
     <div className={`${classes.root} ${className}`}>
@@ -34,6 +38,8 @@ const Input: React.FC<InputProps> = ({
           placeholder={placeholder}
           value={value}
           onChange={onChange}
+          pattern={pattern}
+          required={required}
         />
       </div>
     </div>
